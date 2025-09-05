@@ -21,9 +21,6 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 
   const { pathname } = useRouter();
 
-
-  const { toggleTheme } = useUIStore();
-
   // No Layout
   const noLayoutPaths = ['/404'];
 
@@ -39,9 +36,8 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <main className='bg-white dark:bg-[#0f1116] text-gray-900 dark:text-white transition-colors duration-300 relative h-full '>
 
-      <Navbar />
-      <button onClick={ () => {toggleTheme()  }}>TOGGLE</button>
- 
+      <Navbar/>
+     
       {children}
   
       <Footer />
