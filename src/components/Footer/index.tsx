@@ -1,47 +1,55 @@
-import { Github, Twitter } from 'lucide-react';
-import React from 'react';
-import { motion } from 'framer-motion';
+import { Github, Twitter } from "lucide-react";
+import React from "react";
+import { motion } from "framer-motion";
 
 const Footer = () => {
   return (
-    <footer className="py-6 mt-10">
+    <footer className="relative mt-20 pb-2">
+      {/* Background Gradient Glow */}
+      <div className="absolute inset-0 -z-10 bg-gradient-to-t from-black via-transparent to-transparent opacity-40" />
+
       {/* Brand Name */}
       <motion.div
-        initial={{ opacity: 0.5, y: 100 }}
+        initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{
-          delay: 0.1,
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="mb-4 md:mb-0 font-semibold text-gray-800">
-        <h1
+        className="text-center"
+      >
+        <h1 className="mb-12 bg-clip-text text-transparent text-4xl md:text-9xl font-extrabold tracking-tight bg-gradient-to-r from-pink-500 via-blue-400 to-purple-500">
+          ESCROWDESK
+        </h1>
+      </motion.div>
 
-          className="mt-8 md:mb-10 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
-        >
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-blue-400 to-purple-500">
-            ESCROWDESK
-          </span>
-        </h1>        </motion.div>
+      {/* Divider */}
+      <div className="w-full h-px bg-gradient-to-r from-transparent via-gray-500/30 to-transparent mb-6" />
 
-      <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between text-sm text-gray-600">
-
-
+      {/* Footer Content */}
+      <div className="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between text-sm text-gray-400">
         {/* Rights Text */}
-        <div className="mb-4 md:mb-0 text-center">
-          &copy; {new Date().getFullYear()} All rights reserved.
+        <div className="mb-4 md:mb-0 text-center md:text-left">
+          &copy; {new Date().getFullYear()} EscrowDesk. All rights reserved.
         </div>
 
         {/* Social Icons */}
-        <div className="flex space-x-4">
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-            <Github className="w-5 h-5 hover:text-black transition" />
+        <div className="flex space-x-6">
+          <a
+            href="https://github.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition transform hover:scale-110"
+          >
+            <Github className="w-6 h-6 text-gray-400 hover:text-white hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.6)] transition" />
           </a>
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-            <Twitter className="w-5 h-5 hover:text-blue-500 transition" />
-          </a>
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-            <Twitter className="w-5 h-5 hover:text-blue-500 transition" />
+          <a
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition transform hover:scale-110"
+          >
+            <Twitter className="w-6 h-6 text-gray-400 hover:text-sky-400 hover:drop-shadow-[0_0_10px_rgba(56,189,248,0.6)] transition" />
           </a>
         </div>
       </div>
