@@ -13,12 +13,12 @@ export default function Home() {
 
     <div className=" min-h-screen relative space-y-4 flex flex-col justify-center items-center" >
 
-      <Hero/>
-      <Problem/>
-      <WhyUs/>
-      <WorkFlow/>
-      <TrustedBy/>
-      <FAQs/>
+      <Hero />
+      <Problem />
+      <WhyUs />
+      <WorkFlow />
+      <FAQs />
+      <TrustedBy />
 
     </div>
 
