@@ -29,7 +29,7 @@ const problems = [
 
 const Problem = () => {
   return (
-    <section className="relative px-6 py-20 bg-black text-white">
+    <section className="relative px-6 py-20 ">
       {/* Problem Label */}
       <div className="absolute top-6 left-6 px-3 py-1 text-xs font-semibold uppercase tracking-wider rounded-full bg-white/10 text-gray-300">
         Problem

@@ -13,7 +13,7 @@ const TrustedBy = () => {
   };
 
   return (
-    <section className="relative px-6 py-20 bg-black text-white">
+    <section className="relative px-6 py-20 ">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
