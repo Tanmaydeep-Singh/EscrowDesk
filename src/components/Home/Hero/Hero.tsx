@@ -58,7 +58,8 @@ const Hero = () => {
         className="mt-10 flex flex-col sm:flex-row gap-4"
       >
         <motion.a
-          href="#get-started"
+          href="https://escrow-desk-dashboard.vercel.app/"
+          target="_blank"
           whileHover={{ scale: 1.05, boxShadow: "0 0 20px rgba(99,102,241,0.6)" }}
           whileTap={{ scale: 0.95 }}
           className="px-8 py-3 rounded-xl bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold shadow-lg"
