@@ -1,5 +1,6 @@
 'use client';
 
+import DashboardHead from "@/components/Home/DashboardHead/DashboardHead";
 import FAQs from "@/components/Home/FAQs/FAQs";
 import Hero from "@/components/Home/Hero/Hero";
 import Problem from "@/components/Home/Problem/Problem";
@@ -14,6 +15,7 @@ export default function Home() {
     <div className=" min-h-screen relative space-y-8 flex flex-col justify-center items-center" >
 
       <Hero />
+      <DashboardHead/>
       <Problem />
       <WhyUs />
       <WorkFlow />

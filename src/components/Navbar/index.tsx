@@ -84,7 +84,7 @@ const Navbar = () => {
             </motion.button>
 
             {/* Theme Toggle */}
-            <motion.button
+            {/* <motion.button
               whileHover={{ rotate: 10 }}
               onClick={toggleTheme}
               aria-label="Toggle Theme"
@@ -95,7 +95,7 @@ const Navbar = () => {
               ) : (
                 <Moon className="w-5 h-5 text-gray-800" />
               )}
-            </motion.button>
+            </motion.button> */}
 
             {/* Mobile Menu Toggle */}
             <button
